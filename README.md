@@ -33,7 +33,24 @@ __Algorithm:__
 6. Plot the Signals: Use Matplotlib to plot the message signal, carrier signal, and modulated signal.
 
 __Programme:__
+// Parameters
+
+Ac = 7.9;
+Am = 15.8;
+Fm = 306;
+Fc = 3060;
+Fs = 30600;
+T = 0:1/Fs:2/Fm;
+
+// Message signal em = Am * cos(2*%piFmT); subplot(3,1,1); plot(T, em); xtitle("Message Signal"); xgrid();
+
+// Carrier signal ec = Ac * cos(2*%piFcT); subplot(3,1,2); plot(T, ec); xtitle("Carrier Signal"); xgrid(); // FM signal efm = Ac * cos( (2*%piFcT) + (B * sin(2*%piFmT)) ); subplot(3,1,3); plot(T, efm); xtitle("FM Signal"); xgrid();
 
 __Output:__
 
+<img width="788" height="581" alt="image" src="https://github.com/user-attachments/assets/ad9bc638-2049-46f3-b864-07890380018c" />
+
+
 __Result:__
+
+thus the frequency modulation and demodulation using python is verified.
