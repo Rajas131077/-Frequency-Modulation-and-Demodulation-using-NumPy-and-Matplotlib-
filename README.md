@@ -46,6 +46,11 @@ T = 0:1/Fs:2/Fm;
 
 // Carrier signal ec = Ac * cos(2*%piFcT); subplot(3,1,2); plot(T, ec); xtitle("Carrier Signal"); xgrid(); // FM signal efm = Ac * cos( (2*%piFcT) + (B * sin(2*%piFmT)) ); subplot(3,1,3); plot(T, efm); xtitle("FM Signal"); xgrid();
 
+TABULATION:
+
+<img width="471" height="840" alt="image" src="https://github.com/user-attachments/assets/c48a0070-aeaa-49e3-ab79-eb766c719bcd" />
+
+
 __Output:__
 
 <img width="788" height="581" alt="image" src="https://github.com/user-attachments/assets/ad9bc638-2049-46f3-b864-07890380018c" />
